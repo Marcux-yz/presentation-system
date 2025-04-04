@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Montserrat:wght@300;400;600&family=Poppins:wght@300;400;600&family=Nunito+Sans:wght@300;400;600&family=DM+Sans:wght@300;400;600&family=Lato:wght@300;400;600&family=Raleway:wght@300;400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', 'Montserrat', 'Poppins', 'Nunito Sans', 'DM Sans', 'Lato', 'Raleway', sans-serif;
+    color: #fff;
+}
+body{
+    background-color: #333333;
+}
+.container{
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+
+    width: 100vw;
+    height: 100vh;
+}
+.profile{
+    background-color: crimson;
+
+    width: 25vw;
+}
+.photo-profile{
+    background-color: yellowgreen;
+
+    height: 30vh;
+}
+.photo-profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.photo-profile > img{
+    width: 40%;
+    height: 70%;
+    border-radius: 100%;
+    object-fit: cover;
+}
+.habilities{
+    background-color: purple;
+}
+.content{
+    background-color: blue;
+
+    width: 75vw;
+}
+.profile-info{
+    background-color: bisque;
+}
+.projects{
+    background-color: green;
+}
+.project-content{
+    background-color: goldenrod;
+}
+.project-container{
+    background-color: red;
+}
+.project-img{
+    background-color: black;
+}
+.project-info{
+    background-color: brown;
+}
+.project-buttons{
+    background-color: tomato;
+}
