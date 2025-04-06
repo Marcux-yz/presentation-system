@@ -11,7 +11,6 @@ body{
     background-color: #333333;
 }
 .container{
-    /* background-color: aqua; */
     display: flex;
     flex-direction: row;
 
@@ -19,12 +18,10 @@ body{
     height: 100vh;
 }
 .profile{
-    /* background-color: crimson; */
 
     width: 25vw;
 }
 .photo-profile{
-    /* background-color: yellowgreen; */
 
     height: 30vh;
 }
@@ -32,6 +29,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid #fff;
+
 }
 .photo-profile > img {
     width: 50%;
@@ -40,12 +39,13 @@ body{
     border: 5px solid #fff;
 }
 .habilities{
-    /* background-color: purple; */
     display: flex;
     flex-direction: column;
     align-items: left;
     padding: 20px;
     height: 70vh;
+    border: 1px solid #fff;
+
 }
 .title{
     font-size: 1.3rem;
@@ -65,13 +65,12 @@ li:hover{
     color: crimson;
 }
 .content{
-    background-color: blue;
     width: 75vw;
 }
 .profile-info{
-    /* background-color: bisque; */
     padding: 20px;
     height: 30vh;
+    border: 1px solid #fff;
 }
 .name{
     font-size: 1.7rem;
@@ -90,8 +89,10 @@ li:hover{
 }
 
 .projects{
-    background-color: green;
     padding: 20px;
+    height: 70vh;
+    border: 1px solid #fff;
+
 }
 .path-icon{
     display: inline;
@@ -103,17 +104,54 @@ li:hover{
     display: inline;
 }
 .project-content{
-    background-color: goldenrod;
+    padding: 20px;
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+
 }
 .project-container{
-    background-color: red;
+    max-width: 250px;
+    max-height: 300px;
+
+    width: 220px;
+    height: 270px;
+    padding: 7px;
+
+    border: 1px solid #fff;
 }
 .project-img{
-    background-color: black;
+    text-align: center;
+}
+.project-img img{
+    width: 120px;
+}
+.project-title{
+    font-size: 1.1rem;
+    font-family: "Inconsolata", monospace;
+    margin-bottom: 5px;
 }
 .project-info{
-    background-color: brown;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.project-description{
+    text-align: justify;
+    margin-bottom: 10px;
 }
 .project-buttons{
-    background-color: tomato;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 5px 15px;
+}
+.project-buttons > button{
+    padding: 5px 10px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 15px;
 }
