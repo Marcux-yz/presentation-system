@@ -1,159 +1,5 @@
-<<<<<<< HEAD
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
-* {
-	padding: 0px;
-	margin: 0px;
-	font-family: "Montserrat";
-	color: white;
-}
-
-span {
-	font-size: 20px;
-}
-
-.main {
-	height: 100vh;
-	width: 100vw;
-	display: grid;
-	grid-template-columns: 100%;
-	grid-template-rows: 50% 50%;
-	background-color: black;
-}
-
-.main .marcus-container {
-	display: grid;
-	grid-template-columns: 20% 80%;
-	grid-template-rows: 50% 50%;
-}
-
-.marcus-container ul {
-	list-style-type: none;
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(3, 1fr);
-	gap: 10px;
-}
-
-.marcus-container ul li {
-	margin: 0px 20px;
-}
-
-.marcus-container .initial-data {
-	border-left: 5px solid white;
-}
-
-.marcus-container .skills-and-contact {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
-}
-
-.marcus-container .skills-and-contact h2 {
-	text-align: center;
-}
-
-.marcus-container .projects img {
-	height: 150px;
-	width: 150px;
-	margin-left: 30px;
-}
-
-.marcus-container .projects div {
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-}
-
-.marcus-container .projects {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	border-top: 5px solid white;
-	border-left: 5px solid white;
-}
-
-.marcus-container .initial-data h1 {
-	margin-bottom: 20px;
-}
-
-.main .mateus-container {
-	display: grid;
-	grid-template-columns: 80% 20%;
-	grid-template-rows: 50% 50%;
-	border-top: 5px solid white;
-}
-
-.mateus-container .projects img {
-	height: 150px;
-	width: 150px;
-}
-
-.mateus-container .projects div {
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-}
-
-.mateus-container .projects {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	border-right: 5px solid white;
-}
-
-.mateus-container .initial-data {
-	display: flex;
-	flex-direction: column;
-	border-bottom: 5px solid white;
-	border-right: 5px solid white;
-}
-
-.mateus-container .photo {
-	border-bottom: 5px solid white;
-}
-
-.mateus-container .skills-and-contact ul {
-	list-style-type: none;
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: auto;
-	text-align: center;
-}
-
-.mateus-container .skills-and-contact {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
-}
-
-.mateus-container .skills-and-contact h2 {
-	text-align: center;
-}
-
-.mateus-container .skills-and-contact ul li:last-child {
-	grid-area: 2 / 2;
-}
-
-.photo {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.initial-data {
-	padding: 20px;
-}
-
-.photo img {
-	border-radius: 100%;
-	height: 200px;
-	width: 200px;
-=======
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Montserrat:wght@300;400;600&family=Poppins:wght@300;400;600&family=Nunito+Sans:wght@300;400;600&family=DM+Sans:wght@300;400;600&family=Lato:wght@300;400;600&family=Raleway:wght@300;400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Montserrat:wght@300;400;600&family=Poppins:wght@300;400;600&family=Nunito+Sans:wght@300;400;600&family=DM+Sans:wght@300;400;600&family=Lato:wght@300;400;600&family=Raleway:wght@300;400;600&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap'); */
 *{
     box-sizing: border-box;
     margin: 0;
@@ -197,13 +43,13 @@ body{
     display: flex;
     flex-direction: column;
     align-items: left;
-    padding: 20px;
+    padding: 20px 40px;
     height: 70vh;
     border: 1px solid #fff;
 
 }
 .title{
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     margin-bottom: 10px;
     text-align: center;
 }
@@ -221,6 +67,8 @@ li{
     align-items: center;
     justify-content: center;
     gap: 10px;
+    margin-bottom: 5px;
+    font-size: 1.2em;
 }
 li:hover{
     cursor: pointer;
@@ -230,7 +78,7 @@ li:hover{
     width: 75vw;
 }
 .profile-info{
-    padding: 20px;
+    padding: 20px 40px;
     height: 30vh;
     border: 1px solid #fff;
 }
@@ -248,6 +96,7 @@ li:hover{
 }
 .bio-text{
     text-align: justify;
+    font-size: 1.2em;
 }
 
 .projects{
@@ -264,6 +113,7 @@ li:hover{
 .path-title{
     font-family: "Inconsolata", monospace;
     display: inline;
+    font-size: 1.6em;
 }
 .project-content{
     padding: 20px;
@@ -274,12 +124,10 @@ li:hover{
 
 }
 .project-container{
-    max-width: 250px;
-    max-height: 300px;
 
-    width: 220px;
-    height: 270px;
-    padding: 7px;
+    width: 250px;
+    height: 320px;
+    padding: 10px;
 
     border: 1px solid #fff;
 
@@ -296,7 +144,7 @@ li:hover{
     width: 120px;
 }
 .project-title{
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     font-family: "Inconsolata", monospace;
     margin-bottom: 5px;
 }
@@ -309,6 +157,7 @@ li:hover{
 .project-description{
     text-align: justify;
     margin-bottom: 10px;
+    font-size: 1.2em;
 }
 .project-buttons{
     display: flex;
@@ -355,5 +204,88 @@ button img{
 
 a{
     text-decoration: none;
->>>>>>> 629a1e14779c5bf8696d02e7b067726bd2d66323
+}
+
+/* Responsividade */
+
+@media(max-width: 695px){
+    .projects{
+        height: auto;
+    }
+    .project-content{
+        flex-direction: column;
+    }
+    .profile-info{
+        height: auto;
+    }
+    .bio-text{
+        font-size: 1.2em;
+    }
+    .name{
+        font-size: 1.2em;
+    }
+    .path-title{
+        font-size: 1.2em;
+    }
+
+}
+
+@media(max-width: 980px){
+    .container{
+        flex-direction: column;
+        display: flex;
+    }
+    .photo-profile{
+        width: 100vw;
+    }
+    .photo-profile img{
+        width: 200px;
+    }
+    .profile-info{
+        width: 100vw;
+        text-align: center;
+    }
+    .habilities{
+        width: 100vw;
+        height: auto;
+        align-items: center;
+    }
+    .projects{
+        width: 100vw;
+    }
+    .project-content{
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width: 1080px){
+    .title{
+        font-size: 1.2em;
+    }
+    li{
+        font-size: 1.1em;
+    }
+    .bio-text{
+        font-size: 1.2em;
+    }
+    .project-description{
+        font-size: 0.9em;
+        text-align: justify;
+    }
+    .project-title{
+        font-size: 1em;;
+    }
+    .project-container{
+        width: 200px;
+        height: 290px;
+    }
+    .path-title{
+        font-size: 1.4em;
+    }
+    .project-buttons > button{
+        padding: 5px 20px;
+    }
+
 }

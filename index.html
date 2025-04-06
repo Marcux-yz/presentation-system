@@ -1,90 +1,219 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Presentation System</title>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Curriculo</title>
 </head>
+
 <body>
-	<div class="main">
-		<div class="marcus-container">
-			<div class="photo">
-				<img src="assets/profile-img/marcus.png" alt="marcus">
-			</div>
-			<div class="initial-data">
-				<h1>Marcus Vinicius</h1>
-				<span>20 anos</span>
-				<p>
-					Um apaixonado por programação
-				</p>
-			</div>
-			<div class="skills-and-contact">
-				<h2>Habilidades</h2>
-				<ul>
-					<li>HTML</li>
-					<li>CSS</li>
-					<li>JavaScript</li>
-					<li>TypeScript</li>
-					<li>MySQL</li>
-					<li>API</li>
-					<li>JSON</li>
-					<li>VueJS</li>
-				</ul>
-				<h2>Contato</h2>
-				<p>Discord: ikaruuus_</p>
-				<p>Tel: (+55) 21 997791702</p>
-			</div>
-			<div class="projects">
-				<div>
-					<img src="assets/project-svgrepo-com.svg" alt="project-svg">
-					<span>Em breve...</span>
-				</div>
-				<div>
-					<img src="assets/project-svgrepo-com.svg" alt="project-svg">
-					<span>Em breve...</span>
-				</div>
-				<div>
-					<img src="assets/project-svgrepo-com.svg" alt="project-svg">
-					<span>Em breve...</span>
-				</div>
-			</div>
-		</div>
-		<div class="mateus-container">
-			<div class="initial-data">
-				<h1>Mateus Santos</h1>
-				<span>28 anos</span>
-			</div>
-			<div class="photo">
-				<img src="assets/profile-img/mateus.png" alt="mateus">
-			</div>
-			<div class="projects">
-				<div>
-					<img src="assets/project-svgrepo-com.svg" alt="project-svg">
-					<span>Em breve...</span>
-				</div>
-				<div>
-					<img src="assets/project-svgrepo-com.svg" alt="project-svg">
-					<span>Em breve...</span>
-				</div>
-				<div>
-					<img src="assets/project-svgrepo-com.svg" alt="project-svg">
-					<span>Em breve...</span>
-				</div>
-			</div>
-			<div class="skills-and-contact">
-				<h2>Habilidades</h2>
-				<ul>
-					<li>HTML</li>
-					<li>CSS</li>
-					<li>JavaScript</li>
-					<li>Git</li>
-				</ul>
-				<h2>Contato</h2>
-				<span>Discord: pacdt</span>
-				<span>Tel: (+55) 79 98989051</span>
-			</div>
-		</div>
-	</div>
+    <main>
+        <section class="container">
+            <section class="profile" id="mateus">
+
+                <div class="photo-profile">
+                    <img src="./assets/profile-img/mateus.png" alt="avatar em desenho do desenvolvedor Mateus Santos">
+                </div>
+
+                <div class="habilities">
+                    <h2 class="title">Habilidades</h2>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>GitHub</li>
+                        <li>ChatGPT</li>
+                    </ul>
+                    <h2 class="title">Redes Sociais</h2>
+                    <ul>
+                        <li> <img class="logo-social" src="./assets/icons/social/instagram.png" alt="Logo Instagram"><a href="https://www.instagram.com/msn.mateus/" target="_blank">Instagram</a> </li>
+                        <li> <img class="logo-social" src="./assets/icons/social/linkedin.png" alt="Logo Linkedin"><a href="https://www.linkedin.com/in/mateus-santos-nunes/" target="_blank">Linkedin</a> </li>
+                        <li><img class="logo-social" src="./assets/icons/social/whatsapp.png" alt="Logo WhatsApp"><a href="https://wa.me/+5579998989051" target="_blank">WhatsApp</a> </li>
+                        <li><img class="logo-social" src="./assets/icons/social/github.png" alt="Logo GitHub"><a href="https://github.com/pacdt" target="_blank">GitHub</a> </li>
+                        <li><img class="logo-social" src="./assets/icons/social/discord.png" alt="Logo Discord"><a href="https://discord.com" target="_blank">pacdt</a> </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="content">
+                <article class="profile-info">
+                    <h1 class="name">Mateus Santos</h1>
+                    <span class="age">28</span>
+                    <h4 class="bio-title">Biografia</h4>
+                    <p class="bio-text">Olá, sou um apaixonado por tecnologia e programação, assim como meu parceiro de equipe! Estou estudando essas tecnologias pois gosto muito de criar coisas e com a programação posso expressar melhor minha criatividade!</p>
+                </article>
+
+                <section class="projects">
+                    <img class="path-icon" src="./assets/icons/path.png" alt="ícone de pasta de arquivos">
+                    <h2 class="path-title"> <span class="path-click">pacdt</span> > <span class="path-click">src</span> > Projects.json</h2>
+
+                    <section class="project-content">
+                        <!-- Projetos -->
+                        <div class="project-container">
+                            <div class="project-img">
+                                <img src="./assets/icons/task.png" alt="icone de uma task">
+                            </div>
+
+                            <div class="project-info">
+                                <h4 class="project-title">Calculadora</h4>
+                                <p class="project-description">Calculadora do Windows simples em HTML, CSS e Javascript</p>
+
+                                <div class="project-buttons">
+                                    <button class="btn-demo"><img src="./assets/icons/web.png" alt="Live" title="Live Preview"></button>
+                                    <button class="btn-git"><img src="./assets/icons/github.png" alt="Github" title="Repo GitHub"></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-container">
+                            <div class="project-img">
+                                <img src="./assets/icons/task.png" alt="icone de uma task">
+                            </div>
+
+                            <div class="project-info">
+                                <h4 class="project-title">Tela de Login</h4>
+                                <p class="project-description">Tela de Login simples em HTML, CSS e Javascript</p>
+
+                                <div class="project-buttons">
+                                    <button class="btn-demo"><img src="./assets/icons/web.png" alt="Live" title="Live Preview"></button>
+                                    <button class="btn-git"><img src="./assets/icons/github.png" alt="Github" title="Repo GitHub"></button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="project-container">
+                            <div class="project-img">
+                                <img src="./assets/icons/task.png" alt="icone de uma task">
+                            </div>
+
+                            <div class="project-info">
+                                <h4 class="project-title">Movie Page</h4>
+                                <p class="project-description">Tela de filme simples em HTML, CSS e Javascript</p>
+
+                                <div class="project-buttons">
+                                    <button class="btn-demo"><img src="./assets/icons/web.png" alt="Live" title="Live Preview"></button>
+                                    <button class="btn-git"><img src="./assets/icons/github.png" alt="Github" title="Repo GitHub"></button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </section>
+
+                </section>
+
+            </section>
+
+        </section>
+        <!-- Fim Perfil 01 -->
+
+        <!-- Início Perfil 02-->
+        <section class="container reverse">
+            <section class="profile" id="marcus">
+
+                <div class="photo-profile">
+                    <img src="./assets/profile-img/marcus.png" alt="avatar em desenho do desenvolvedor Mateus Santos">
+                </div>
+
+                <div class="habilities">
+                    <h2 class="title">Habilidades</h2>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>GitHub</li>
+                        <li>API</li>
+                        <li>Python</li>
+                    </ul>
+                    <h2 class="title">Redes Sociais</h2>
+                    <ul>
+                        <li> <img class="logo-social" src="./assets/icons/social/instagram.png" alt="Logo Instagram"><a href="https://www.instagram.com/" target="_blank">Instagram</a> </li>
+                        <li> <img class="logo-social" src="./assets/icons/social/linkedin.png" alt="Logo Linkedin"><a href="https://www.linkedin.com/in/" target="_blank">Linkedin</a> </li>
+                        <li><img class="logo-social" src="./assets/icons/social/whatsapp.png" alt="Logo WhatsApp"><a href="https://wa.me/+5521997791702" target="_blank">WhatsApp</a> </li>
+                        <li><img class="logo-social" src="./assets/icons/social/github.png" alt="Logo GitHub"><a href="https://github.com/Marcux-yz" target="_blank">GitHub</a> </li>
+                        <li><img class="logo-social" src="./assets/icons/social/discord.png" alt="Logo Discord"><a href="https://discord.com" target="_blank">ikaruuus_</a> </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="content">
+                <article class="profile-info">
+                    <h1 class="name">Marcus Vinicius</h1>
+                    <span class="age">20</span>
+                    <h4 class="bio-title">Biografia</h4>
+                    <p class="bio-text">Meu nome é Marcus Vinicius, mas você pode me chamar apenas de Marcus. Estou cursando Análise e Desenvolvimento de Sistemas na Universidade Estácio. Pessoalmente, transformo uma frase bem conhecida em um dilema profissional: Programar é uma arte, e o programador deve ser um artista. Além de bits e bytes, eu gosto de:
+                        Jogos, História, Filosofia, Filmes e muito mais!</p>
+                </article>
+
+                <section class="projects">
+                    <img class="path-icon" src="./assets/icons/path.png" alt="ícone de pasta de arquivos">
+                    <h2 class="path-title"><span class="path-click">Marcux-yz</span> > <span class="path-click">src</span> > Projects.json</h2>
+
+                    <section class="project-content">
+                        <!-- Projetos -->
+                        <div class="project-container">
+                            <div class="project-img">
+                                <img src="./assets/icons/task.png" alt="icone de uma task">
+                            </div>
+
+                            <div class="project-info">
+                                <h4 class="project-title">Em breve</h4>
+                                <p class="project-description">Um novo projeto está no forno. Aguardem!</p>
+
+                                <div class="project-buttons">
+                                    <button class="btn-demo disabled"><img src="./assets/icons/web.png" alt="Live" title="Live Preview"></button>
+                                    <button class="btn-git disabled"><img src="./assets/icons/github.png" alt="Github" title="Repo GitHub"></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-container">
+                            <div class="project-img">
+                                <img src="./assets/icons/task.png" alt="icone de uma task">
+                            </div>
+
+                            <div class="project-info">
+                                <h4 class="project-title">Em breve</h4>
+                                <p class="project-description">Um novo projeto está no forno. Aguardem!</p>
+
+                                <div class="project-buttons">
+                                    <button class="btn-demo disabled"><img src="./assets/icons/web.png" alt="Live" title="Live Preview"></button>
+                                    <button class="btn-git disabled"><img src="./assets/icons/github.png" alt="Github" title="Repo GitHub"></button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="project-container">
+                            <div class="project-img">
+                                <img src="./assets/icons/task.png" alt="icone de uma task">
+                            </div>
+
+                            <div class="project-info">
+                                <h4 class="project-title">Em breve</h4>
+                                <p class="project-description">Um novo projeto está no forno. Aguardem!</p>
+
+                                <div class="project-buttons">
+                                    <button class="btn-demo disabled"><img src="./assets/icons/web.png" alt="Live" title="Live Preview"></button>
+                                    <button class="btn-git disabled"><img src="./assets/icons/github.png" alt="Github" title="Repo GitHub"></button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </section>
+
+                </section>
+
+            </section>
+
+        </section>
+    </main>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
