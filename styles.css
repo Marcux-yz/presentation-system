@@ -8,6 +8,9 @@
     color: #fff;
 
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: #333333;
     overflow-x: hidden;
@@ -186,4 +189,12 @@ button img{
 
 .logo-social{
     width: 25px;
+}
+
+.path-click{
+    color: #cacaca;
+}
+.path-click:hover{
+    color: crimson;
+    cursor: pointer;
 }
