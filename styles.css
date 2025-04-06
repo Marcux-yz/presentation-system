@@ -60,6 +60,13 @@ ul{
     justify-content: flex-start;
     margin-bottom: 20px; 
 }
+li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
 li:hover{
     cursor: pointer;
     color: crimson;
@@ -154,4 +161,13 @@ li:hover{
     color: #000;
     border: none;
     border-radius: 15px;
+}
+
+.reverse{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.logo-social{
+    width: 25px;
 }
