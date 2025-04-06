@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
@@ -150,4 +151,209 @@ span {
 	border-radius: 100%;
 	height: 200px;
 	width: 200px;
+=======
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Montserrat:wght@300;400;600&family=Poppins:wght@300;400;600&family=Nunito+Sans:wght@300;400;600&family=DM+Sans:wght@300;400;600&family=Lato:wght@300;400;600&family=Raleway:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', 'Montserrat', 'Poppins', 'Nunito Sans', 'DM Sans', 'Lato', 'Raleway', sans-serif;
+    color: #fff;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #333333;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.profile{
+
+    width: 25vw;
+}
+.photo-profile{
+
+    height: 30vh;
+}
+.photo-profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #fff;
+
+}
+.photo-profile > img {
+    width: 50%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #fff;
+}
+.habilities{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 20px;
+    height: 70vh;
+    border: 1px solid #fff;
+
+}
+.title{
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+    margin-bottom: 20px; 
+}
+li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+li:hover{
+    cursor: pointer;
+    color: crimson;
+}
+.content{
+    width: 75vw;
+}
+.profile-info{
+    padding: 20px;
+    height: 30vh;
+    border: 1px solid #fff;
+}
+.name{
+    font-size: 1.7rem;
+    display: inline;
+}
+.age{
+    position: relative;
+    top: -5px;
+}
+.bio-title{
+    margin-bottom: 3px;
+    margin-top: 5px;
+}
+.bio-text{
+    text-align: justify;
+}
+
+.projects{
+    padding: 20px;
+    height: 70vh;
+    border: 1px solid #fff;
+
+}
+.path-icon{
+    display: inline;
+    width: 25px;
+    margin-right: 5px;
+}
+.path-title{
+    font-family: "Inconsolata", monospace;
+    display: inline;
+}
+.project-content{
+    padding: 20px;
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+
+}
+.project-container{
+    max-width: 250px;
+    max-height: 300px;
+
+    width: 220px;
+    height: 270px;
+    padding: 7px;
+
+    border: 1px solid #fff;
+
+    transition: transform 0.5s ease;
+}
+.project-container:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.project-img{
+    text-align: center;
+}
+.project-img img{
+    width: 120px;
+}
+.project-title{
+    font-size: 1.1rem;
+    font-family: "Inconsolata", monospace;
+    margin-bottom: 5px;
+}
+.project-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.project-description{
+    text-align: justify;
+    margin-bottom: 10px;
+}
+.project-buttons{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 5px 15px;
+}
+.project-buttons > button{
+    padding: 10px 30px;
+    background-color: transparent;
+    outline: 1px solid #fff;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+button:hover{
+    transform: scale(1.05);
+}
+button img{
+    width: 20px;
+}
+.reverse{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.logo-social{
+    width: 25px;
+}
+
+.path-click{
+    color: #cacaca;
+}
+.path-click:hover{
+    color: crimson;
+    cursor: pointer;
+}
+
+.disabled:hover{
+    cursor: not-allowed;
+}
+
+a{
+    text-decoration: none;
+>>>>>>> 629a1e14779c5bf8696d02e7b067726bd2d66323
 }
