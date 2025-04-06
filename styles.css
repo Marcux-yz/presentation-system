@@ -6,9 +6,11 @@
     padding: 0;
     font-family: 'Inter', 'Montserrat', 'Poppins', 'Nunito Sans', 'DM Sans', 'Lato', 'Raleway', sans-serif;
     color: #fff;
+
 }
 body{
     background-color: #333333;
+    overflow-x: hidden;
 }
 .container{
     display: flex;
@@ -127,6 +129,12 @@ li:hover{
     padding: 7px;
 
     border: 1px solid #fff;
+
+    transition: transform 0.5s ease;
+}
+.project-container:hover{
+    cursor: pointer;
+    transform: scale(1.05);
 }
 .project-img{
     text-align: center;
@@ -156,13 +164,21 @@ li:hover{
     padding: 5px 15px;
 }
 .project-buttons > button{
-    padding: 5px 10px;
-    background-color: #fff;
-    color: #000;
+    padding: 10px 30px;
+    background-color: transparent;
+    outline: 1px solid #fff;
+    color: #fff;
     border: none;
     border-radius: 15px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
 }
-
+button:hover{
+    transform: scale(1.05);
+}
+button img{
+    width: 20px;
+}
 .reverse{
     display: flex;
     flex-direction: row-reverse;
