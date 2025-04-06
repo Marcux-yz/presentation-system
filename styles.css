@@ -1,70 +1,153 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Montserrat:wght@300;400;600&family=Poppins:wght@300;400;600&family=Nunito+Sans:wght@300;400;600&family=DM+Sans:wght@300;400;600&family=Lato:wght@300;400;600&family=Raleway:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Inter', 'Montserrat', 'Poppins', 'Nunito Sans', 'DM Sans', 'Lato', 'Raleway', sans-serif;
-    color: #fff;
+* {
+	padding: 0px;
+	margin: 0px;
+	font-family: "Montserrat";
+	color: white;
 }
-body{
-    background-color: #333333;
-}
-.container{
-    background-color: aqua;
-    display: flex;
-    flex-direction: row;
 
-    width: 100vw;
-    height: 100vh;
+span {
+	font-size: 20px;
 }
-.profile{
-    background-color: crimson;
 
-    width: 25vw;
+.main {
+	height: 100vh;
+	width: 100vw;
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 50% 50%;
+	background-color: black;
 }
-.photo-profile{
-    background-color: yellowgreen;
 
-    height: 30vh;
+.main .marcus-container {
+	display: grid;
+	grid-template-columns: 20% 80%;
+	grid-template-rows: 50% 50%;
 }
-.photo-profile{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.photo-profile > img{
-    width: 40%;
-    height: 70%;
-    border-radius: 100%;
-    object-fit: cover;
-}
-.habilities{
-    background-color: purple;
-}
-.content{
-    background-color: blue;
 
-    width: 75vw;
+.marcus-container ul {
+	list-style-type: none;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	gap: 10px;
 }
-.profile-info{
-    background-color: bisque;
+
+.marcus-container ul li {
+	margin: 0px 20px;
 }
-.projects{
-    background-color: green;
+
+.marcus-container .initial-data {
+	border-left: 5px solid white;
 }
-.project-content{
-    background-color: goldenrod;
+
+.marcus-container .skills-and-contact {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
 }
-.project-container{
-    background-color: red;
+
+.marcus-container .skills-and-contact h2 {
+	text-align: center;
 }
-.project-img{
-    background-color: black;
+
+.marcus-container .projects img {
+	height: 150px;
+	width: 150px;
+	margin-left: 30px;
 }
-.project-info{
-    background-color: brown;
+
+.marcus-container .projects div {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
 }
-.project-buttons{
-    background-color: tomato;
+
+.marcus-container .projects {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	border-top: 5px solid white;
+	border-left: 5px solid white;
+}
+
+.marcus-container .initial-data h1 {
+	margin-bottom: 20px;
+}
+
+.main .mateus-container {
+	display: grid;
+	grid-template-columns: 80% 20%;
+	grid-template-rows: 50% 50%;
+	border-top: 5px solid white;
+}
+
+.mateus-container .projects img {
+	height: 150px;
+	width: 150px;
+}
+
+.mateus-container .projects div {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.mateus-container .projects {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	border-right: 5px solid white;
+}
+
+.mateus-container .initial-data {
+	display: flex;
+	flex-direction: column;
+	border-bottom: 5px solid white;
+	border-right: 5px solid white;
+}
+
+.mateus-container .photo {
+	border-bottom: 5px solid white;
+}
+
+.mateus-container .skills-and-contact ul {
+	list-style-type: none;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: auto;
+	text-align: center;
+}
+
+.mateus-container .skills-and-contact {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.mateus-container .skills-and-contact h2 {
+	text-align: center;
+}
+
+.mateus-container .skills-and-contact ul li:last-child {
+	grid-area: 2 / 2;
+}
+
+.photo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.initial-data {
+	padding: 20px;
+}
+
+.photo img {
+	border-radius: 100%;
+	height: 200px;
+	width: 200px;
 }
