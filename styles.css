@@ -13,14 +13,10 @@ html{
 }
 body{
     background-color: #333333;
-    overflow-x: hidden;
 }
 .container{
     display: flex;
     flex-direction: row;
-
-    width: 100vw;
-    height: 100vh;
 }
 .profile{
 
@@ -197,4 +193,12 @@ button img{
 .path-click:hover{
     color: crimson;
     cursor: pointer;
+}
+
+.disabled:hover{
+    cursor: not-allowed;
+}
+
+a{
+    text-decoration: none;
 }
